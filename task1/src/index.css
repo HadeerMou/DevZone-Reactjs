@@ -14,7 +14,9 @@ body {
   cursor: pointer;
 }
 
-.link .li {
+.link .li,
+a {
+  text-decoration: none;
   padding-top: 5px;
   font-size: 15px;
   display: inline;
@@ -25,6 +27,8 @@ body {
   font-size: 22px;
   color: white;
 }
+
+/*home*/
 .head {
   font-family: "Italianno", cursive;
   font-weight: 400;
@@ -70,14 +74,17 @@ body {
 }
 /*footer*/
 .footer {
+  border-style: solid none none none;
+  border-width: 5px;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  box-shadow: 5px 8px 6px rgba(255, 255, 255, 0.2) inset;
   margin-top: 50px;
   padding: 100px;
   background-color: rgba(19, 19, 19, 0.94);
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-top-color: rgb(240, 233, 230);
-  border-top-width: 100px;
-  box-shadow: 20px white;
+
+  box-shadow: 10px white;
 }
 .footerlink {
   color: rgba(255, 255, 255, 0.6);

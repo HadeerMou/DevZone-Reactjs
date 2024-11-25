@@ -1,6 +1,9 @@
 import { Component } from "react";
-import FAimg from "./assets/fashion.png";
-import diamond from "./assets/Sparkling Diamond.png";
+import contact from "./contact";
+import about from "./about";
+import gallery from "./gallery";
+import Home from "./Home";
+import sections from "./sections";
 
 class Header extends Component {
   render() {
@@ -8,32 +11,19 @@ class Header extends Component {
       <div>
         <div className="links">
           <ul className="link">
-            <li className="li">Contact</li>
-            <li className="li">About</li>
+            <li className="li">
+              <a href={contact}>Contact</a>
+            </li>
+            <li className="li">
+              <a href={about}>About</a>
+            </li>
             <li className="name">InspoFA</li>
-            <li className="li">Gallery</li>
-            <li className="li">Sections</li>
-          </ul>
-        </div>
-        <div className="content">
-          <h1 className="head">Fashion</h1>
-          <img className="img" alt="fashion" src={FAimg} />
-        </div>
-        <div className="words">
-          <ul className="words">
-            <li className="li">Inspiration</li>
             <li className="li">
-              <img className="dia" src={diamond} />
+              <a href={gallery}>Gallery</a>
             </li>
-            <li className="name">Style</li>
             <li className="li">
-              <img className="dia" src={diamond} />
+              <a href={sections}>Sections</a>
             </li>
-            <li className="li">Elegance</li>
-            <li className="li">
-              <img className="dia" src={diamond} />
-            </li>
-            <li className="name">Glowing</li>
           </ul>
         </div>
       </div>
